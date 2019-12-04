@@ -1,15 +1,16 @@
 import React from "react";
 import "./style.css";
+import logo from "./images/logo-tracis.png"
 import { Link } from "react-router-dom";
 
 function Nav() {
   return (
     <nav className="navbar navbar-dark bg-dark">
-      <img src="my-app\src\components\navBar\images\logo.tracis.png" alt="tracis parrots 4u logo" />
+      <img src= {logo} alt="parrots 4u logo" />
 
 
       <span>
-        <ul className="navbar-nav">
+        <span className="navbar-nav">
           <li>
             <Link className="navbar-brand" to="/">
               Home
@@ -40,7 +41,7 @@ function Nav() {
               Contact
               </Link>
           </li>
-        </ul>
+        </span>
       </span>
     </nav>
   );
