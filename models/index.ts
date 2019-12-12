@@ -1,12 +1,15 @@
 "use strict";
 
-var fs = require("fs");
-var path = require("path");
+import _config from '../config/config'
+// import inventory from './inventory';
+import fs from"fs";
+import path from "path";
 var Sequelize = require("sequelize");
 var basename = path.basename(module.filename);
 var env = process.env.NODE_ENV || "development";
-var config = require(__dirname + "/../config/config.json")[env];
+// var config = require(__dirname + "/../config/config.json")[env];
 var db:any = {};
+const config = _config[env];
 
 if (config.use_env_variable) {
     var sequelize = new Sequelize(process.env[config.use_env_variable]);
@@ -33,4 +36,6 @@ Object.keys(db).forEach(function (modelName) {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
-module.exports = db;
+//db.sequelize.import(path.join(__dirname, 'inventory.js'))
+
+export default db;
