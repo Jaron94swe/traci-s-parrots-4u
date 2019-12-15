@@ -18,7 +18,7 @@ export default function (sequelize: Sequelize, DataTypes) {
             }
         },
         price: {
-            type: DataTypes.DECIMAL,
+            type: DataTypes.DECIMAL(10,2),
             allowNull: false,
             validate: {
                 len: [1, Infinity]
