@@ -1,4 +1,7 @@
 import React from "react";
+import { useAuth0 } from "../../../react-auth0-spa";
+import axios from "axios";
+
 const Admin = () => {
   return (
     <div>

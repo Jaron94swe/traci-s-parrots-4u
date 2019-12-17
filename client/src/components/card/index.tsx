@@ -19,11 +19,10 @@ const Card : React.FC<CardProps> = (props) => {
         <div className="card">
           <div className="card-image">
             <img alt={props.data.description} src={props.data.image} />
-            <span className="card-title product-title">{props.data.item}</span>
           </div>
           <div className="card-content">
-            <p>{props.data.item}</p><br/>
-            <p>${props.data.price}</p><br/>
+            <p>{props.data.item}</p>
+            <p>${props.data.price}</p>
             <p>{props.data.description}
              
             <span> | </span>
