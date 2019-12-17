@@ -5,7 +5,7 @@ const About = () => {
   return (
     
     <div>
-      <h1>About Page</h1>
+      <h1>About Traci's Parrots 4U</h1>
       <Container fluid>
                 <Row fluid>
                 <Column size="md-6">

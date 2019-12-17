@@ -31,6 +31,7 @@ const Admin = () => {
           <label htmlFor="exampleFormControlInput1">Image</label>
           <input type="text" className="form-control" id="exampleFormControlInput3" placeholder="Enter iamge url link here" />
         </div>
+        <input className="btn btn-primary" type="submit" value="Submit"></input>
       </form>
     </div>
   );

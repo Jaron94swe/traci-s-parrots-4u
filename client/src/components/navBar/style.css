@@ -1,4 +1,8 @@
- Nav.navebar {
+nav.navbar.navbar-default {
+    margin-bottom: 0;
+    background-color: blue;
+  }
+  .navebar {
     margin-bottom: 0;
     background-color: blue;
   }

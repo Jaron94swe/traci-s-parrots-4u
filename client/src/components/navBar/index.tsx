@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import logo from "./images/logo-tracis.png"
 import { Link } from "react-router-dom";
+import Auth from "../Auth"
 
 function Nav() {
   return (
@@ -41,8 +42,17 @@ function Nav() {
               Contact
               </Link>
           </li>
+          <li className="nav-item">
+            <Link
+              to="/checkout"
+              className={window.location.pathname === "/checkout" ? "nav-link active" : "nav-link"}
+            >
+              Checkout
+              </Link>
+          </li>
         </ul>
       </div>
+      <Auth />
     </nav>
   );
 }

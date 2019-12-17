@@ -7,7 +7,7 @@ interface CardProps {
         item:number;
         price: number;
         description:string;
-        image:string;
+        imageUrl:string;
         id:number;
 
     }
@@ -18,7 +18,7 @@ const Card : React.FC<CardProps> = (props) => {
         <div className="col s12 m4">
         <div className="card">
           <div className="card-image">
-            <img alt={props.data.description} src={props.data.image} />
+            <img alt={props.data.description} src={props.data.imageUrl} />
           </div>
           <div className="card-content">
             <p>{props.data.item}</p>

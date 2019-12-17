@@ -9,6 +9,7 @@ interface MyState {
   price: string,
   description: string,
   quantity: string,
+  imageUrl: string
 }
 export default class Products extends React.Component<MyProps, MyState> {
 
@@ -22,6 +23,7 @@ export default class Products extends React.Component<MyProps, MyState> {
       price: "",
       description: "",
       quantity: "",
+      imageUrl: ""
     };
   }
 
