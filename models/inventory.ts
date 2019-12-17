@@ -37,6 +37,13 @@ export default function (sequelize: Sequelize, DataTypes) {
             validate: {
                 len: [1, Infinity]
             }
+        },
+        imageUrl: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                len: [1, Infinity]
+            }
         }
     });
     return Inventory;

@@ -9,8 +9,8 @@ function Nav() {
       <img src= {logo} alt="parrots 4u logo" />
 
 
-      <span>
-        <span className="navbar-nav">
+      <div>
+        <ul className="nav justify-content-center">
           <li>
             <Link className="navbar-brand" to="/">
               Home
@@ -41,10 +41,24 @@ function Nav() {
               Contact
               </Link>
           </li>
-        </span>
-      </span>
+        </ul>
+      </div>
     </nav>
   );
 }
+{/* <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul> */}
 
 export default Nav;
