@@ -15,7 +15,7 @@ interface CardProps {
 const Card : React.FC<CardProps> = (props) => {
     return(
       <Container fluid>
-        <div className="col s12 m4">
+        <div className="col m6">
         <div className="card">
           <div className="card-image">
             <img alt={props.data.description} src={props.data.imageUrl} />
@@ -23,13 +23,14 @@ const Card : React.FC<CardProps> = (props) => {
           <div className="card-content">
             <p>Item: {props.data.item}</p>
             <p>${props.data.price}</p>
-            <p>{props.data.description}
+            <p>Description:{props.data.description}
              
-            <span> | </span>
+            {/* <span> | </span> */}
             <span>
-            <Link to={"/products/" + props.data.id}>
+            {/* <Link to={"/products/" + props.data.id}>
               View More >
-            </Link></span>
+            </Link> */}
+            </span>
             </p>
           </div>
         </div>
