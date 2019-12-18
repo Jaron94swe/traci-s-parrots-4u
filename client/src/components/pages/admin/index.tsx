@@ -1,5 +1,4 @@
 import React from "react";
-import { useAuth0 } from "../../../react-auth0-spa";
 import axios from "axios";
 interface MyProps { }
 interface MyState {
@@ -26,26 +25,26 @@ export default class Admin extends React.Component<MyProps, MyState> {
       imageUrl: ""
     };
   }
-  handleItemChange = (event:any) => {
+  handleItemChange = (event: any) => {
     this.setState({ item: event.target.value });
   }
-  handleCategoryChange = (event:any) => {
+  handleCategoryChange = (event: any) => {
     this.setState({ category: event.target.value });
   }
-  handlePriceChange = (event:any) => {
+  handlePriceChange = (event: any) => {
     this.setState({ price: event.target.value });
   }
-  handleDescriptionChange = (event:any) => {
+  handleDescriptionChange = (event: any) => {
     this.setState({ description: event.target.value });
   }
-  handleQuantityChange = (event:any) => {
+  handleQuantityChange = (event: any) => {
     this.setState({ quantity: event.target.value });
   }
-  handleImageUrlChange = (event:any) => {
+  handleImageUrlChange = (event: any) => {
     this.setState({ imageUrl: event.target.value });
   }
-  
-  handleSubmit = (event:any) => {
+
+  handleSubmit = (event: any) => {
     event.preventDefault();
 
     const product = {
@@ -56,46 +55,59 @@ export default class Admin extends React.Component<MyProps, MyState> {
       quantity: this.state.quantity,
       imageUrl: this.state.imageUrl
     };
+    console.log(product)
 
-    axios.post(`http://localhost:3000/api/posts`, { product })
+    axios.post(`http://localhost:3000/api/posts`, product)
       .then(res => {
         console.log(res);
         console.log(res.data);
       })
   }
   render() {
-  return (
+    return (
 
-    <div>
-      <h1>Enter Product Here</h1>
-      <form>
-        <div className="form-group">
-          <label htmlFor="exampleFormControlInput1">Item number</label>
+      <div>
+        <h1>Enter Product Here</h1>
+        <form onSubmit={this.handleSubmit}>
+          <div>
+            <label >Item number:
           <input type="text" name="item" onChange={this.handleItemChange} />
-        </div>
-        <div className="form-group">
-          <label htmlFor="exampleFormControlInput1">Price</label>
+            </label>
+          </div>
+
+          <div>
+            <label >Price:
           <input type="text" name="price" onChange={this.handlePriceChange} />
-        </div>
-        <div className="form-group">
-          <label htmlFor="exampleFormControlInput1">Quantity</label>
+            </label>
+          </div>
+
+          <div>
+            <label >Quantity:
           <input type="text" name="quantity" onChange={this.handleQuantityChange} />
-        </div>
-        <div className="form-group">
-          <label htmlFor="exampleFormControlInput1">Description</label>
+            </label>
+          </div>
+
+          <div>
+            <label >Description:
           <input type="text" name="description" onChange={this.handleDescriptionChange} />
-        </div>
-        <div className="form-group">
-          <label htmlFor="exampleFormControlInput1">Category</label>
+            </label>
+          </div>
+
+          <div>
+            <label >Category:
           <input type="text" name="category" onChange={this.handleCategoryChange} />
-        </div>
-        <div className="form-group">
-          <label htmlFor="exampleFormControlInput1">Image Link</label>
+            </label>
+          </div>
+
+          <div>
+            <label >Image Link:
           <input type="text" name="imageUrl" onChange={this.handleImageUrlChange} />
-        </div>
-        <input className="btn btn-primary" type="submit" value="Submit"></input>
-      </form>
-    </div>
-  );
-}
+            </label>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    );
+  }
 }
