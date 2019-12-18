@@ -21,7 +21,7 @@ const Card : React.FC<CardProps> = (props) => {
             <img alt={props.data.description} src={props.data.imageUrl} />
           </div>
           <div className="card-content">
-            <p>{props.data.item}</p>
+            <p>Item: {props.data.item}</p>
             <p>${props.data.price}</p>
             <p>{props.data.description}
              

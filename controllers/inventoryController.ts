@@ -27,7 +27,8 @@ export default function (app) {
       category: req.body.category,
       price: req.body.price,
       description: req.body.description,
-      quantity: req.body.quantity
+      quantity: req.body.quantity,
+      imageUrl: req.body.imageUrl
     })
       .then(function (dbInventory) {
         res.json(dbInventory);
