@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import {Container} from "../Grid"
-
+// import { Link } from "react-router-dom";
 interface CardProps {
     data:{
         item:number;
@@ -14,8 +12,7 @@ interface CardProps {
 }
 const Card : React.FC<CardProps> = (props) => {
     return(
-      <Container fluid>
-        <div className="col m6">
+        <div className="col s6 m6 l3">
         <div className="card">
           <div className="card-image">
             <img alt={props.data.description} src={props.data.imageUrl} />
@@ -24,7 +21,7 @@ const Card : React.FC<CardProps> = (props) => {
             <p>Item: {props.data.item}</p>
             <p>${props.data.price}</p>
             <p>Description:{props.data.description}
-             
+            
             {/* <span> | </span> */}
             <span>
             {/* <Link to={"/products/" + props.data.id}>
@@ -32,10 +29,10 @@ const Card : React.FC<CardProps> = (props) => {
             </Link> */}
             </span>
             </p>
+            <button>Add To Cart</button>
           </div>
         </div>
       </div>
-      </Container>
     )
 }
 export default Card

@@ -25,7 +25,7 @@ export default class Admin extends React.Component<MyProps, MyState> {
       imageUrl: ""
     };
   }
-  handleItemChange = (event: any) => {
+  handleItemChange = (event:any) => {
     this.setState({ item: event.target.value });
   }
   handleCategoryChange = (event: any) => {
@@ -55,7 +55,6 @@ export default class Admin extends React.Component<MyProps, MyState> {
       quantity: this.state.quantity,
       imageUrl: this.state.imageUrl
     };
-    console.log(product)
 
     axios.post(`http://localhost:3000/api/posts`, product)
       .then(res => {

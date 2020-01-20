@@ -1,5 +1,5 @@
 import React from "react";
-import { Column, Row, Container } from "../../Grid";
+// import { Column, Row, Container } from "../../Grid";
 
 const About = () => {
   return (

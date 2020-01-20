@@ -6,6 +6,10 @@
   height: 40vmin;
 }
 
+.app-body{
+  background-image: image("http://s1.picswalls.com/wallpapers/2014/07/18/beautiful-parrot-wallpaper_104904106_57.jpg");
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

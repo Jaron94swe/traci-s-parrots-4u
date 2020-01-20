@@ -14,12 +14,12 @@ const Auth = () => {
   }
   return (
     <header className="flex items-center justify-between flex-wrap bg-indigo-900 shadow-md p-6">
-      <h4 className=" text-3xl text-white">Admin</h4>
+      {/* <h4 className=" text-3xl text-white">Admin</h4> */}
 
       <button
         className="login"
         onClick={() =>
-          window.open("http://localhost:3000/admin", "_blank")
+          window.open("http://localhost:3000/admin", "https://whispering-shore-84512.herokuapp.com/admin")
         }
       ></button>
       {(!isAuthenticated || loading) && (

@@ -12,7 +12,8 @@ export default function (app) {
         quantity: {
           [Op.gt]: 0
         }
-      }
+      },
+      order:sequelize.col('category')
     })
       .then(function (dbInventory) {
         res.json(dbInventory);

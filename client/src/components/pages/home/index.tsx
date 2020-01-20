@@ -25,8 +25,8 @@ const Home = () => {
                     <Column size="md-6">
                         <div className="card" style={{ width: '18rem' }}>
                             <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
-                                <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            
+                               
                                 <p className="card-text">Traci's Parrots 4 U is a Salt Lake based parrot store specializing in all things parrots. We want you to make Traci's Parrots 4 U your one-stop parrot destination, whether it's toys, cages, food or one of our many specialized parrot accessories or services, we'll pamper your feathered babies.</p><br/>
                                 <p className="card-text">OUR ADDRESS
 683 West 5300 South
