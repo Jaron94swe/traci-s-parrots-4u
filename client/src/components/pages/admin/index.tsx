@@ -56,7 +56,7 @@ export default class Admin extends React.Component<MyProps, MyState> {
       imageUrl: this.state.imageUrl
     };
 
-    axios.post(`http://localhost:3000/api/posts`, product)
+    axios.post(`https://whispering-shore-84512.herokuapp.com/api/posts`, product)
       .then(res => {
         console.log(res);
         console.log(res.data);

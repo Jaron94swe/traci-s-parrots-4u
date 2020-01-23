@@ -6,7 +6,7 @@ import Auth from "../Auth"
 
 function Nav() {
   return (
-    <nav className="navbar navbar-dark bg-dark">
+    <nav className="navbar navbar-light bg-light">
       <img src= {logo} alt="parrots 4u logo" />
 
 

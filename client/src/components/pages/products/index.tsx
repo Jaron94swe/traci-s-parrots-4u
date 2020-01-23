@@ -28,7 +28,7 @@ export default class Products extends React.Component<MyProps, MyState> {
   }
 
   componentDidMount() {
-    axios.get(`http://localhost:3000/api/products`)
+    axios.get(`https://whispering-shore-84512.herokuapp.com/api/products`)
       .then(res => {
         const inventory = res.data;
         this.setState({ inventory });
