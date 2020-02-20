@@ -6,7 +6,7 @@ import Auth from "../Auth"
 
 function Nav() {
   return (
-    <nav className="navbar navbar-light bg-light">
+    <nav className="navbar navbar-dark bg-dark">
       <img src= {logo} alt="parrots 4u logo" />
 
 
@@ -56,19 +56,6 @@ function Nav() {
     </nav>
   );
 }
-{/* <ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">Disabled</a>
-  </li>
-</ul> */}
+
 
 export default Nav;
