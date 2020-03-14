@@ -10,7 +10,7 @@
   background-image: image("http://s1.picswalls.com/wallpapers/2014/07/18/beautiful-parrot-wallpaper_104904106_57.jpg");
 }
 
-.App-header {
+.app-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -24,3 +24,19 @@
 .App-link {
   color: #09d3ac;
 }
+.container{
+  min-height: calc(100vh - 70px);
+  background-image: image("http://s1.picswalls.com/wallpapers/2014/07/18/beautiful-parrot-wallpaper_104904106_57.jpg");
+}
+
+/* .footer {
+    text-align: center;
+    height: '60px';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+    padding: 3px;
+    background: black;
+    color: white;
+  } */

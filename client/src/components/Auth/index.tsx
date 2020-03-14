@@ -24,7 +24,7 @@ const Auth = () => {
       ></button>
       {(!isAuthenticated || loading) && (
         <button
-          className="text-white text-xl"
+          className="text-white text-xl bg-dark"
           onClick={() => loginWithRedirect({})}
         >
           Log in
