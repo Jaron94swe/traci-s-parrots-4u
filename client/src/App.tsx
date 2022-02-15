@@ -35,7 +35,7 @@ function App() {
         <Route exact path="/checkout" component={Checkout} />
       </div>
       <div>
-      <Footer/>
+        <Footer />
       </div>
     </Router>
   );

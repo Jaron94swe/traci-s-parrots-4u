@@ -1,18 +1,32 @@
-/* .footer {
+.footer {
     min-height: 100px;
-    background: #E5E5E5;
-    position: relative;
-  } */
-  
-  .footer {
-    text-align: center;
-    height: 50px;
-    /* bottom: 0; */
-    /* left: 0; */
-    width: 100%;
-    /* right: 0; */
-    padding: 3px;
     background: black;
-    color: white;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    height: 2.5rem;
+    overflow:hidden;
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
   }
+  .containerOne {
+    column-count: 3;
+    column-gap: 40px;
+  }
+  
+  /* .fixed-footer { */
+    /* text-align: center; */
+    /* height: 50px; */
+    /* bottom: 0; */
+    /* position: absolute; */
+    /* left: 0; */
+    /* width: 100%; */
+    /* right: 0; */
+    /* padding: 3px; */
+    /* background: black; */
+    /* color: rgb(255, 255, 255);
+  } */
   

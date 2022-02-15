@@ -19,7 +19,7 @@ const Auth = () => {
       <button
         className="login"
         onClick={() =>
-          window.open("https://whispering-shore-84512.herokuapp.com/admin")
+          window.open("https://whispering-shore-84512.herokuapp.com")
         }
       ></button>
       {(!isAuthenticated || loading) && (

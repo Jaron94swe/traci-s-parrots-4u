@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+import axios from "axios"
 interface MyProps { }
 interface MyState {
   inventory: any[],
@@ -57,7 +57,7 @@ export default class Admin extends React.Component<MyProps, MyState> {
     };
 
     axios.post(`https://whispering-shore-84512.herokuapp.com/api/posts`, product)
-      .then(res => {
+      .then((res: any) => {
         console.log(res);
         console.log(res.data);
       })
