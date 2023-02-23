@@ -33,7 +33,7 @@
     "mysql2": "^2.0.2",
     "react-router-dom": "^5.1.2",
     "react-square-payment-form": "^0.4.1",
-    "sequelize": "^5.21.2",
+    "sequelize": "^6.28.2",
     "square-connect": "^2.20191120.0",
     "typescript": "^3.7.3"
   }
